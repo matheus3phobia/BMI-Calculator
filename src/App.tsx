@@ -65,11 +65,8 @@ function App() {
             </div>
           )}
           {toShow && (
-            <div className={styles.rightBig}>
-              <div className={styles.rightArrow} onClick={handleBackButton}>
-                <img src={'assets/leftarrow.png'} alt="" width={25} />
-              </div>
-              <GridItem item={toShow} />
+            <div className={styles.leftBig}>
+              <GridItem handleBackButton={handleBackButton} item={toShow} />
             </div>
           )}
         </div>

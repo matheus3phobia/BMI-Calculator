@@ -104,31 +104,17 @@ body {
   gap: 20px;
 }
 
-.container .rightSide .rightBig {
+.container .rightSide .leftBig {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative
 }
 
-.container .rightSide .rightArrow {
-  position: absolute;
-  background: #227c9d;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  margin-left: -35px;
-  margin-top: 145px;
-  transition: all ease .3s;
-}
-
-.container .rightSide .rightArrow {
-  opacity: 0;
+.container .rightSide .leftArrow {
+  opacity: 1;
 }
 
 @media (max-width: 770px) {
@@ -146,7 +132,7 @@ body {
     margin-left: 0;
     margin-top: 50px;
   }
-  .container .rightSide .rightArrow {
+  .container .rightSide .leftArrow {
     margin-left: 0;
     margin-top: 0;
     border-radius: 10px;

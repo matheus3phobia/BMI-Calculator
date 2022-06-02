@@ -1,3 +1,8 @@
+
+.wrapper {
+  position: relative;
+}
+
 .main {
   flex: 1;
   color: #fff;
@@ -33,4 +38,19 @@
 .yourIMC {
   font-size: 17px;
   margin: 10px 0 50px 0;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 30%;
+  background: #227c9d;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease .3s;
 }
