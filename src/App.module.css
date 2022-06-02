@@ -15,6 +15,23 @@ body {
 .headerContainer {
   max-width: 900px;
   margin: 40px auto;
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  padding: 5px 10px;
+  background: #227c9d;
+  font-weight: 900;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.LogoDesc {
+  font-size: 12px;
+  margin-left: 10px;
+  color: #3a4b5c;
+  font-style: italic;
 }
 
 .container {

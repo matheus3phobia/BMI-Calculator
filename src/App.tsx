@@ -1,6 +1,4 @@
 import styles from "./App.module.css";
-import poweredImage from "./assets/powered.png";
-import leftArrow from "./assets/left-arrow.png";
 import { useState } from "react";
 import { levels, calculateIMC, Level } from "./helpers/imc";
 import { GridItem } from "./components/GridItem";
@@ -28,7 +26,8 @@ function App() {
     <div className={styles.main}>
       <header>
         <div className={styles.headerContainer}>
-          <img src={poweredImage} alt="Powered by b7web" width={150} />
+          <strong className={styles.Logo}>MH</strong>
+          <p className={styles.LogoDesc}>powered by Matheus2phobia</p>
         </div>
       </header>
       <div className={styles.container}>
@@ -68,7 +67,7 @@ function App() {
           {toShow && (
             <div className={styles.rightBig}>
               <div className={styles.rightArrow} onClick={handleBackButton}>
-                <img src={leftArrow} alt="" width={25} />
+                <img src={'assets/leftarrow.png'} alt="" width={25} />
               </div>
               <GridItem item={toShow} />
             </div>
