@@ -10,7 +10,7 @@ function App() {
 
   const handleCalculator = () => {
     if (heightField && weightField) {
-      setToShow(calculateIMC(heightField, weightField));
+      setToShow(calculateIMC(weightField, heightField));
     } else {
       alert("Por favor preencha os campos corretamente");
     }

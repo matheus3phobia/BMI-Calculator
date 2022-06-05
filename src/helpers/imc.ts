@@ -16,8 +16,8 @@ export const levels = [
 export const calculateIMC = (weight: number, height: number) => {
   const imc = weight / (height * height);
 
-  if (imc > 18.5) return levels[0];
-  if (imc > 24.9) return levels[1];
-  if (imc > 30) return levels[2];
+  if (imc < 18.5) return levels[0];
+  if (imc < 24.9 && imc >= 18.5) return levels[1];
+  if (imc < 30 && imc >= 24.9) return levels[2];
   return levels[3];
 };
