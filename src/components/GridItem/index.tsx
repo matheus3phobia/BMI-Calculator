@@ -25,12 +25,12 @@ export const GridItem = ({ item, handleBackButton }: GridItemProps) => {
         <div className={styles.gridTitle}>{item.title}</div>
         {item.yourIMC && (
           <div className={styles.yourIMC}>
-            Seu IMC é de {item.yourIMC} kg/m²
+            IMC is between {item.yourIMC} kg/m²
           </div>
         )}
         <div className={styles.gridInfo}>
           <>
-            Seu IMC está entre <strong>{item.imc[0]}</strong> e{" "}
+            IMC is between <strong>{item.imc[0]}</strong> e{" "}
             <strong>{item.imc[1]}</strong>
           </>
         </div>

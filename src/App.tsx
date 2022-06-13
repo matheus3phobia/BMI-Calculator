@@ -12,7 +12,7 @@ function App() {
     if (heightField && weightField) {
       setToShow(calculateIMC(weightField, heightField));
     } else {
-      alert("Por favor preencha os campos corretamente");
+      alert("Please fill all fields");
     }
   };
 
@@ -32,28 +32,26 @@ function App() {
       </header>
       <div className={styles.container}>
         <div className={styles.leftSide}>
-          <h1>Calcule o seu IMC</h1>
+          <h1>Calculate your BMI</h1>
           <p>
-            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
-            Organização Mundial de Saúde para calcular o peso ideal de cada
-            pessoa.
+            BMI is the abbreviation for Body Mass Index, a parameter used by the World Health Organization to calculate the ideal weight of each person.
           </p>
           <input
             type="number"
-            placeholder="Digite a sua altura. Ex: 1.7 (em metros)"
+            placeholder="Your Height. Ex: 1.7 (meters)"
             value={heightField > 0 ? heightField : ""}
             onChange={(event) => setHeightField(parseFloat(event.target.value))}
             disabled={toShow ? true : false}
           />
           <input
             type="number"
-            placeholder="Digite o seu peso. Ex: 70 (em quilos)"
+            placeholder="Your Weight. Ex: 70 (kg)"
             value={weightField > 0 ? weightField : ""}
             onChange={(event) => setWeightField(parseFloat(event.target.value))}
             disabled={toShow ? true : false}
           />
           <button onClick={handleCalculator} disabled={toShow ? true : false}>
-            Calcular
+            Calculate
           </button>
         </div>
         <div className={styles.rightSide}>
